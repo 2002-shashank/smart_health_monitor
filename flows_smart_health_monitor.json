@@ -1,0 +1,457 @@
+[
+    {
+        "id": "1cb9f33ec81e6238",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "12c283c75ab7fa81",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "675bdbad53c9dafa",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#00cc22",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#00cc22",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#00cc22",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1aff40",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#00cc22",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "c8fb588aa6f6ad25",
+        "type": "ui_tab",
+        "name": "SmartGrid",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "dc3b48db5539bf10",
+        "type": "ui_group",
+        "name": "Meter 1",
+        "tab": "c8fb588aa6f6ad25",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c1396805a17478e2",
+        "type": "ui_tab",
+        "name": "SmartVitals",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0f6316d81847a788",
+        "type": "ui_group",
+        "name": "Vitals",
+        "tab": "c1396805a17478e2",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ui-tab",
+        "type": "ui_tab",
+        "name": "SmartVitals",
+        "icon": "dashboard"
+    },
+    {
+        "id": "ui-group",
+        "type": "ui_group",
+        "name": "Vitals",
+        "tab": "ui-tab",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "18acbfdbee8a1f81",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "5229d080899147f6",
+        "type": "mqtt-broker",
+        "name": "Vitals Subscriber",
+        "broker": "mqtt://localhost:1883",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "099046ecb4402630",
+        "type": "mqtt in",
+        "z": "1cb9f33ec81e6238",
+        "name": "Vitals In",
+        "topic": "health/vitals",
+        "qos": "1",
+        "datatype": "json",
+        "broker": "18acbfdbee8a1f81",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 200,
+        "wires": [
+            [
+                "46c620551a24dc3c"
+            ]
+        ]
+    },
+    {
+        "id": "46c620551a24dc3c",
+        "type": "function",
+        "z": "1cb9f33ec81e6238",
+        "name": "Split Vitals",
+        "func": "const [temperature, heart_rate, systolic, diastolic] = msg.payload;\n\nreturn [\n  { payload: temperature, vital: \"temperature\" },\n  { payload: heart_rate, vital: \"heart_rate\" },\n  { payload: systolic, vital: \"systolic\" },\n  { payload: diastolic, vital: \"diastolic\" }\n];\n",
+        "outputs": 4,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 200,
+        "wires": [
+            [
+                "395a7fd9f5b6f2cd",
+                "19b9b9a9bf2bb73e"
+            ],
+            [
+                "395a7fd9f5b6f2cd",
+                "5e45c95e259634f2"
+            ],
+            [
+                "395a7fd9f5b6f2cd",
+                "15ecac9f2f021996"
+            ],
+            [
+                "395a7fd9f5b6f2cd",
+                "8c62d275730246f4"
+            ]
+        ]
+    },
+    {
+        "id": "19b9b9a9bf2bb73e",
+        "type": "ui_gauge",
+        "z": "1cb9f33ec81e6238",
+        "name": "",
+        "group": "ui-group",
+        "order": 0,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "34",
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 550,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "5e45c95e259634f2",
+        "type": "ui_gauge",
+        "z": "1cb9f33ec81e6238",
+        "name": "",
+        "group": "ui-group",
+        "order": 1,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Heart rate",
+        "label": "bpm",
+        "format": "{{value}}",
+        "min": "60",
+        "max": "160",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 500,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "15ecac9f2f021996",
+        "type": "ui_gauge",
+        "z": "1cb9f33ec81e6238",
+        "name": "",
+        "group": "ui-group",
+        "order": 2,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Systolic",
+        "label": "mmHg",
+        "format": "{{value}}",
+        "min": "90",
+        "max": "160",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 540,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "8c62d275730246f4",
+        "type": "ui_gauge",
+        "z": "1cb9f33ec81e6238",
+        "name": "",
+        "group": "ui-group",
+        "order": 3,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Diastolic",
+        "label": "mmHg",
+        "format": "{{value}}",
+        "min": "60",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 540,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "395a7fd9f5b6f2cd",
+        "type": "function",
+        "z": "1cb9f33ec81e6238",
+        "name": "Check Alerts",
+        "func": "let vitals = flow.get(\"vitals\") || {};\nvitals[msg.vital] = msg.payload;\nflow.set(\"vitals\", vitals);\n\nif (Object.keys(vitals).length === 4) {\n    let alerts = [];\n\n    if (vitals.heart_rate < 60 || vitals.heart_rate > 160)\n        alerts.push(`🚨 Heart Rate: ${vitals.heart_rate} bpm`);\n\n    if (vitals.systolic < 90 || vitals.systolic > 160)\n        alerts.push(`🚨 Systolic BP: ${vitals.systolic} mmHg`);\n\n    if (vitals.diastolic < 60 || vitals.diastolic > 100)\n        alerts.push(`🚨 Diastolic BP: ${vitals.diastolic} mmHg`);\n\n    if (vitals.temperature < 35 || vitals.temperature > 40)\n        alerts.push(`🚨 Temperature: ${vitals.temperature} °C`);\n\n    flow.set(\"vitals\", {}); // reset for next cycle\n\n    if (alerts.length > 0) {\n        return { payload: alerts.join(\"\\n\") };\n    }\n}\n\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 420,
+        "wires": [
+            [
+                "38ef4c81a58151f5",
+                "5fbfac8185fed86f"
+            ]
+        ]
+    },
+    {
+        "id": "38ef4c81a58151f5",
+        "type": "ui_text",
+        "z": "1cb9f33ec81e6238",
+        "group": "ui-group",
+        "order": 4,
+        "width": "6",
+        "height": "6",
+        "name": "",
+        "label": "Vital Alerts",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 490,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "5fbfac8185fed86f",
+        "type": "debug",
+        "z": "1cb9f33ec81e6238",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 520,
+        "wires": []
+    }
+]
